@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>9.0.21022</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{4BF79580-BD40-8719-DEC4-3FC42411B4D7}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_4_0;UNITY_3_4;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Prefabs\AI\AI.js" />
+     <Compile Include="Assets\Prefabs\AI\Point.js" />
+     <Compile Include="Assets\Scripts\Camara\SmoothFollow.js" />
+     <Compile Include="Assets\Scripts\Camara\mapCamera.js" />
+     <Compile Include="Assets\Scripts\JavaScripts\Car.js" />
+     <Compile Include="Assets\Scripts\JavaScripts\CrashController.js" />
+     <Compile Include="Assets\Scripts\JavaScripts\LightmapperObjectUV.js" />
+     <Compile Include="Assets\Scripts\JavaScripts\Skidmarks.js" />
+     <Compile Include="Assets\Scripts\JavaScripts\SoundController.js" />
+     <Compile Include="Assets\Scripts\carInfo.js" />
+     <Compile Include="Assets\Scripts\dy\selectedCarScript.js" />
+     <Compile Include="Assets\Scripts\dy\selectviewscript.js" />
+     <Compile Include="Assets\Scripts\guiScript\gameHUD.js" />
+     <Compile Include="Assets\Scripts\guiScript\main.js" />
+     <Compile Include="Assets\Scripts\guiScript\mainGUi.js" />
+     <Compile Include="Assets\Scripts\guiScript\trackButton.js" />
+     <Compile Include="Assets\Scripts\modSelectGUI.js" />
+     <Compile Include="Assets\jue\Flag.js" />
+     <Compile Include="Assets\jue\Timecontroller.js" />
+     <Compile Include="Assets\jue\Timer.js" />
+     <Compile Include="Assets\jue\checkPoints.js" />
+     <Compile Include="Assets\jue\wall.js" />
+     <None Include="Assets\Shaders\LightsEmmissive.shader" />
+     <None Include="Assets\Shaders\ShadowProjection.shader" />
+     <None Include="Assets\Shaders\GlassReflect.shader" />
+     <None Include="Assets\Shaders\Skidmarks.shader" />
+     <None Include="Assets\Scripts\자동차 종류별 자동차 스크립트 변경사항.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
+	

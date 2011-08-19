@@ -1,0 +1,37 @@
+자동차 속도 : TopSpeed의 값을 변경
+코너링시 마찰력 : dragMultiplier의 값을 변경
+한계 코너링 각도 : maximum Turn 값과 minimum Turn 값을 조절
+
+자동차 속도단위를 킬로미터 per Hour로 간주하여 m/s로 변환하기
+function Convert_Kilometers_Per_Hour_To_Meters_Per_Second(value : float) : float
+{
+	return value * 10 / 36.0;
+}
+
+화면에 자동차 속도를 k/h로 다시 출력하기 위해 호출하는 함수
+function Convert_Meters_Per_Second_To_Kilometers_Per_Hour(value : float) : float
+{
+	return value * 3.6;
+}
+
+print(Convert_Meters_Per_Second_To_Kilometers_Per_Hour(relativeVelocity.z));
+
+현재 자동차의 기어 
+currentGear에 저장되어 있음
+UpdateGear(relativeVelocity);
+이 함수 호출된 후에 업데이트 된 기어를 받아와서 화면에 표시
+
+resetTime : 자동차가 뒤집혔을 때 resetTime만큼 시간 지나면 자동차 다시
+원상태로 돌아가도록 하기위한 변수. 5초로 초기화되어있음
+resetTimer라는 변수에 자동차가 뒤집힌 시점부터 뒤집힌 후 경과시간이
+저장되어 있음.
+
+차가 뒤집히면 GUI로 FlipCar Count Dowm : resetTimer/resetTime을 보여주어 1초마다 resetTimer가 갱신되는 것을 화면에 보여주도록.
+
+실질적으로 자동차가 움직이는데 필요한 엔진의 힘을 설정하는 함수
+CalculateEnginePower
+앞키 누를때, 뒤키 누를때, 아무것도 안누를때 자동차의 엔진출력을 정의
+
+뒤키 누를때 멈추는 힘 
+ApplyThrottle 함수의 brakeForce = Mathf.Sign(throttle) * engineForceValues[0] * rigidbody.mass;부분에서
+engineForceValues[0]을 더 큰 엔진값으로 변경

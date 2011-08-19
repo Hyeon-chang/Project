@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\jue\Timer.js">
+    <Files>
+      <File FileName="Assets\jue\Timer.js" Line="25" Column="2" />
+      <File FileName="Assets\jue\Timecontroller.js" Line="51" Column="2" />
+      <File FileName="Assets\Scripts\guiScript\mainGUi.js" Line="15" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
